@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <input type="number" id="first_num">
+    <input type="number" id="second_num">
+    <button class="button">+</button>
+    <button class="button">-</button>
+    <button class="button">*</button>
+    <button class="button">/</button>
+    <button class="button" onclick="process()">solve</button>
+    <div id="result"></div>
+
+    <script>
+        function process(){
+            let result = document.getElementById('result');
+            num1 = document.getElementById('first_num');
+            num2 = document.getElementById('second_num');
+            sign = document.getElementsByClassName('button').value;
+            sum = `${num1} + ${sign} + ${num2}`
+            return console.log(sum)
+        }
+    </script>
+</body>
+</html>
