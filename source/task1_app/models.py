@@ -1,3 +1,5 @@
 from django.db import models
 
-# Create your models here.
+class MathVar(models.Model):
+    A = models.IntegerField()
+    B = models.IntegerField()
